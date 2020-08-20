@@ -12,6 +12,9 @@ import {createSoybean} from "./seeds/soybean.js";
 import {createSunflower} from "./seeds/sunflower.js";
 import {createWheat} from "./seeds/wheat.js";
 
+import {addPlant} from "./field.js";
+import {usePlants} from "./field.js";
+
 const asparagusSeed = createAsparagus();
 console.log(asparagusSeed);
 
@@ -29,3 +32,9 @@ console.log(sunflowerSeed);
 
 const wheatSeed = createWheat();
 console.log(wheatSeed);
+
+const tillField = addPlant(asparagusSeed);
+console.log(tillField);
+
+const tillFields = usePlants();
+console.log(tillFields);

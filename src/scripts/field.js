@@ -6,5 +6,5 @@ export const addPlant = (seed) => {
 };
 
 export const usePlants = () => {
-    return addPlant.slice();
+    return field.slice();
 };
